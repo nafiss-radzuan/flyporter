@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="20dp">
+        <requestFocus />
+
+        <ImageView
+            android:id="@+id/imageViewCBlack"
+            android:layout_width="219dp"
+            android:layout_height="249dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageViewCRGreen"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewCBlack"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:contentDescription="@null"
+            android:src="@null" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewCRGreen"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bebasneueregular"
+            android:text="@string/sign_in"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Welcome_back_login"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:background="@drawable/edit_text_rounded"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/email_icon"
+                android:contentDescription="@null"/>
+
+            <EditText
+                android:id="@+id/editTextEmailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#FFFFFF"
+                android:ellipsize="start"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="textEmailAddress"
+                android:layout_margin="6dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#808080"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutEmail"
+            android:background="@drawable/edit_text_rounded"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/lock_icon"
+                android:contentDescription="@null"/>
+
+            <EditText
+                android:id="@+id/editTextPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#FFFFFF"
+                android:ellipsize="start"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint=""
+                android:inputType="textPassword"
+                android:layout_margin="6dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#808080" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/buttonSignIn"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="#2bbc9b"
+            android:text="@string/sign_in"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonSignIn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/Not_user"
+            android:textAlignment="center"
+            android:textColor="#1a8cff"
+            android:textColorLink="#1a8cff" />
+
+        <TextView
+            android:id="@+id/textViewResetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSignUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/recover_password"
+            android:textAlignment="center"
+            android:textColor="#1a8cff"
+            android:textColorLink="#1a8cff" />
+
+    </RelativeLayout>
+
+</ScrollView>

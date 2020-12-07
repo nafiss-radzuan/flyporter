@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="30dp">
+
+        <requestFocus />>
+
+        <TextView
+            android:id="@+id/textViewCreateProfileHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/bebasneueregular"
+            android:text="@string/edit_your_profile"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/editTextFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewCreateProfileHeader"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/full_name"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="#808080" />
+
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextFullName"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/editTextAddress1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextPhoneNumber"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Address Line 1"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/editTextAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextAddress1"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Address Line 2"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/editTextTown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextAddress2"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Town"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/editTextPostCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextTown"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:ellipsize="start"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Postcode"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="#808080" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/textViewCheckbox"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/editTextPostCode"-->
+        <!--android:layout_marginEnd="18dp"-->
+        <!--android:layout_toStartOf="@+id/checkBoxAdvertiser"-->
+        <!--android:paddingLeft="30dp"-->
+        <!--android:text="What Are You Primarily Going To Be Using The App For?"-->
+        <!--android:textColor="#808080"-->
+        <!--android:textSize="16dp" />-->
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/checkBoxAdvertiser"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@+id/editTextPostCode"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginEnd="15dp"-->
+        <!--android:buttonTint="#2bbc9b"-->
+        <!--android:ems="10"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="Advertiser"-->
+
+        <!--android:textColor="#2bbc9b"-->
+        <!--android:visibility="visible" />-->
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/checkBoxCourier"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignStart="@+id/checkBoxAdvertiser"-->
+        <!--android:layout_below="@+id/checkBoxAdvertiser"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_marginEnd="15dp"-->
+        <!--android:buttonTint="#2bbc9b"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="Courier"-->
+        <!--android:textColor="#2bbc9b"-->
+        <!--android:visibility="visible" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/buttonSaveProfile"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textViewCheckbox"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="#2bbc9b"-->
+        <!--android:padding="18dp"-->
+        <!--android:text="Save Profile"-->
+        <!--android:textColor="#FFFFFF" />-->
+
+        <TextView
+            android:id="@+id/textViewCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPostCode"
+            android:gravity="center_horizontal|fill_horizontal|center"
+            android:text="What Are You Primarily Going To Be Using The App For?"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLayout1"
+            android:layout_below="@+id/textViewCheckbox"
+            android:layout_centerHorizontal="true">
+
+            <CheckBox
+                android:id="@+id/checkBoxAdvertiser"
+                android:fontFamily="@font/applegaramond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#2bbc9b"
+                android:text="Advertiser"
+                android:textColor="#2bbc9b"
+                android:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/checkBoxCourier"
+                android:fontFamily="@font/applegaramond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#2bbc9b"
+                android:text="Courier"
+                android:textColor="#2bbc9b"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linLayout1"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="#2bbc9b"
+            android:padding="18dp"
+            android:text="Save Profile"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+</ScrollView>

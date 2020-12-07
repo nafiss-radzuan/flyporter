@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kitkat.crossroads.MyAdverts.PendingAdverts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/customborderrounded">
+
+                    <ImageView
+                        android:id="@+id/jobImagePending"
+                        android:layout_width="180dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:adjustViewBounds="false"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        android:id="@+id/textViewJobName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/jobImagePending"
+                        android:layout_marginStart="29dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_toEndOf="@+id/jobImagePending"
+                        android:text="@string/jobname_here"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewJobDescription1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignStart="@+id/textViewJobName1"
+                        android:layout_below="@+id/textViewJobName1"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/jobdescription_here"
+                        android:textSize="14sp" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminateTint="@color/colorPrimary"
+                        android:indeterminateTintMode="src_in"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="65dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@drawable/customborderrounded" />
+
+                <ExpandableListView
+                    android:id="@+id/expandable_list_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:dividerHeight="3dp"
+                    android:pointerIcon="arrow"></ExpandableListView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@drawable/customborderrounded" />
+
+                <ExpandableListView
+                    android:id="@+id/expandable_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:dividerHeight="3dp"
+                    android:pointerIcon="arrow"></ExpandableListView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@drawable/customborderrounded" />
+
+                <ExpandableListView
+                    android:id="@+id/expandable_list_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:dividerHeight="3dp"
+                    android:pointerIcon="arrow"></ExpandableListView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@drawable/customborderrounded" />
+
+
+            </LinearLayout>
+
+            <!-- ACTIVE BIDS PART -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/buttonViewActiveBids"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2bbc9b"
+                    android:text="@string/view_your_bids_now"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

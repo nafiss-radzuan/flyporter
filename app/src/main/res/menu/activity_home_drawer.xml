@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_findAJob"
+            android:icon="@drawable/ic_find_job"
+            android:title="Find A Job" />
+        <item
+            android:id="@+id/nav_postAnAdvert"
+            android:icon="@drawable/ic_post"
+            android:title="Post An Advert" />
+        <item
+            android:id="@+id/nav_myAdverts"
+            android:icon="@drawable/ic_my_jobs"
+            android:title="My Adverts" />
+        <item
+            android:id="@+id/nav_myJobs"
+            android:icon="@drawable/ic_van"
+            android:title="My Jobs" />
+
+        <item
+            android:id="@+id/nav_askQuestion"
+            android:icon="@drawable/ic_help"
+            android:title="Ask Us A Question" />
+    </group>
+
+</menu>
