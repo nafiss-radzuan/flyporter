@@ -40,9 +40,15 @@ A step by step series of examples that tell you have to get a development env ru
    6) My Adverts - Adverts that you have posted.
    7) My Jobs - Jobs that have been bid on by you and accepted by the job poster.
 
-
 ```
 
+## Firebase
+```
+The CrossRoads application used three parts of FireBase.
+1. Auth: To register and login users
+2. Storage: To store images
+3. RealTime Database: A database to save and write information to. To store jobs, bids and personal user information in.
+```
 ### Project Build
 Press "Sync gradle files" (Ctrl + F9) and allow it to finish building. Then, run the app (Shift + F10) the Android emulator should be up and running; (let us assume the existence of the "NPixel 3a API 26" virtual device) The Flyporter application will automatically start.
 
