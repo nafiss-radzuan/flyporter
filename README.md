@@ -44,7 +44,7 @@ A step by step series of examples that tell you have to get a development env ru
 
 ## Firebase
 ```
-The CrossRoads application used three parts of FireBase.
+The Flyporter application used three parts of FireBase.
 1. Auth: To register and login users
 2. Storage: To store images
 3. RealTime Database: A database to save and write information to. To store jobs, bids and personal user information in.
